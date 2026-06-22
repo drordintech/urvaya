@@ -1,0 +1,86 @@
+.jewellery-section {
+  background-color: var(--color-aged-parchment);
+  padding: 100px 0 100px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.jewellery-header {
+  text-align: right;
+  padding-right: 40px;
+  margin-bottom: 60px;
+}
+
+.jewel-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.jewel-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.jewel-scroll-track {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  padding-right: 40px;
+}
+
+.jewel-card {
+  width: calc((100vw - 80px - 96px) / 4);
+  min-width: 300px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.jewel-image-wrapper {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  width: 100%;
+  clip-path: var(--mughal-arch);
+  overflow: hidden;
+}
+
+.jewel-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.jewel-card:hover .jewel-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.jewel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media (max-width: 1024px) {
+  .jewel-card {
+    width: calc((100vw - 60px) / 2.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .jewellery-section {
+    padding-left: 20px;
+  }
+  .jewellery-header {
+    padding-right: 20px;
+  }
+  .jewel-card {
+    width: calc(100vw - 80px);
+    min-width: unset;
+  }
+}

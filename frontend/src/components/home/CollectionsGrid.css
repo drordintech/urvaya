@@ -1,0 +1,126 @@
+.collections-section {
+  background-color: var(--color-aged-parchment);
+  padding: 100px 40px;
+  position: relative;
+}
+
+.collections-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M30 10 C20 25 10 30 30 50 C50 30 40 25 30 10 Z" fill="%23402217" fill-opacity="0.04" /%3E%3C/svg%3E');
+  pointer-events: none;
+}
+
+.collections-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.lotus-divider {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.collection-card {
+  aspect-ratio: 2 / 3;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.collection-arch {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  clip-path: var(--mughal-arch);
+  overflow: hidden;
+}
+
+.collection-arch img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.6s ease;
+}
+
+.collection-card:hover .collection-arch img {
+  transform: scale(1.08);
+}
+
+.collection-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, rgba(26, 16, 8, 0.9) 0%, rgba(26, 16, 8, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 20px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.collection-card:hover .collection-overlay {
+  transform: translateY(0);
+}
+
+.collection-overlay h3 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 28px;
+  color: var(--color-ivory);
+  margin-bottom: 8px;
+}
+
+.explore-btn {
+  font-family: var(--font-body);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gold-accent);
+}
+
+.arch-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  clip-path: var(--mughal-arch);
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+}

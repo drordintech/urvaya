@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300;1,9..40,400&display=swap');
+
+:root {
+  /* Primary */
+  --color-rakt: #402217;
+  --color-crimson: #802520;
+  
+  /* Accent */
+  --color-haldi: #B64F1A;
+  --color-marigold: #B64F1A;
+  
+  /* Heritage */
+  --color-forest: #6C5610;
+  
+  /* Neutrals */
+  --color-ivory: #E2D3B4;
+  --color-petal: #B6907E;
+  
+  /* Backgrounds */
+  --color-smoked-umber: #1A1008;
+  --color-aged-parchment: #F0E8D8;
+  
+  /* Helper variants based on the design */
+  --color-gold-accent: #C9A84C;
+  --color-text-dim: #C8B89A;
+  --color-footer-bg: #0D0804;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Shapes */
+  --mughal-arch: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  --mughal-arch-smooth: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--color-smoked-umber);
+  color: var(--color-ivory);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.8;
+  /* Custom Cursor */
+  cursor: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="%23C9A84C" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="4"/></svg>') 8 8, auto;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: inherit;
+}
+
+/* Global utility classes */
+
+.text-hero {
+  font-size: clamp(40px, 8vw, 96px);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--color-ivory);
+}
+
+.text-section-title {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 600;
+  color: var(--color-haldi);
+}
+
+.text-subheading {
+  font-size: 20px;
+  color: var(--color-ivory);
+}
+
+.text-body {
+  font-size: 16px;
+  color: var(--color-text-dim);
+}
+
+.text-label {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-haldi);
+}
+
+/* Animations */
+@keyframes shimmerSweep {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.hover-shimmer {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.hover-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 0%, rgba(201, 168, 76, 0.2) 50%, transparent 100%);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+
+.hover-shimmer:hover::after {
+  transform: translateX(50%);
+}
+
+.vignette-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(26, 16, 8, 0.7) 100%);
+  pointer-events: none;
+}
+
+/* Scroll reveals */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

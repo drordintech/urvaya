@@ -1,0 +1,110 @@
+.feature-wall-section {
+  background-color: var(--color-smoked-umber);
+  padding: 100px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-wall-layout {
+  display: flex;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.wall-portrait {
+  flex: 1;
+  max-width: 350px;
+}
+
+.portrait-arch {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  clip-path: var(--mughal-arch);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+.portrait-arch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wall-niches {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(64, 34, 23, 0.2); /* faint rakt background to frame niches */
+  border-radius: 8px;
+  border: 1px solid rgba(182, 79, 26, 0.1);
+}
+
+.niche-container {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  padding: 8px;
+}
+
+.niche-arch {
+  width: 100%;
+  height: 100%;
+  clip-path: var(--mughal-arch);
+  position: relative;
+  background-color: #0d0804;
+  overflow: hidden;
+}
+
+.niche-arch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.candle-glow {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle at bottom center, rgba(201, 168, 76, 0.6) 0%, rgba(201, 168, 76, 0) 70%);
+  z-index: 1;
+  animation: candlePulse 2s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes candlePulse {
+  0% { opacity: 0.85; transform: translateX(-50%) scale(1); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.05); }
+  100% { opacity: 0.85; transform: translateX(-50%) scale(1); }
+}
+
+@media (max-width: 1024px) {
+  .feature-wall-layout {
+    flex-direction: column;
+  }
+  .wall-portrait {
+    display: none; /* Hide large portraits on smaller screens to focus on niches */
+  }
+  .wall-niches {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wall-niches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

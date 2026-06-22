@@ -1,0 +1,162 @@
+.footer {
+  background-color: var(--color-footer-bg);
+  padding: 80px 40px 40px;
+  color: var(--color-text-dim);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo h2 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--color-ivory);
+  font-weight: 300;
+}
+
+.footer-tagline {
+  font-family: var(--font-body);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-text-dim);
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-col h3 {
+  font-family: var(--font-body);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-ivory);
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--color-text-dim);
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: var(--color-haldi);
+}
+
+.newsletter-col {
+  grid-column: 4 / 5;
+}
+
+.newsletter-heading {
+  font-family: var(--font-display) !important;
+  font-size: 22px !important;
+  font-style: italic;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  color: var(--color-ivory) !important;
+  margin-bottom: 24px !important;
+}
+
+.newsletter-form {
+  display: flex;
+  border-bottom: 1px solid var(--color-haldi);
+  padding-bottom: 8px;
+}
+
+.newsletter-form input {
+  background: transparent;
+  border: none;
+  color: var(--color-ivory);
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 14px;
+  outline: none;
+}
+
+.newsletter-form input::placeholder {
+  color: rgba(200, 184, 154, 0.5);
+}
+
+.newsletter-form button {
+  cursor: pointer;
+  padding: 0 8px;
+  transition: transform 0.2s ease;
+}
+
+.newsletter-form button:hover {
+  transform: translateX(4px);
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 80px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.hairline-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-haldi);
+  opacity: 0.2;
+}
+
+.copyright {
+  font-family: var(--font-body);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-text-dim);
+}
+
+.payment-logos {
+  display: flex;
+  gap: 16px;
+  opacity: 0.5;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsletter-col {
+    grid-column: span 2;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .newsletter-col {
+    grid-column: 1;
+  }
+}

@@ -1,0 +1,206 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+  overflow: hidden;
+  background-color: var(--color-smoked-umber);
+}
+
+.hero-backgrounds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 16, 8, 0.45); /* Blends video with the warm amber/dark theme */
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--color-haldi);
+  margin-bottom: 24px;
+  opacity: 0;
+}
+
+.hero-content h1 {
+  margin-bottom: 24px;
+  opacity: 0;
+}
+
+.hero-tagline {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: var(--color-text-dim);
+  margin-bottom: 40px;
+  opacity: 0;
+}
+
+.hero-btn {
+  border: 1px solid var(--color-gold-accent);
+  color: var(--color-gold-accent);
+  font-family: var(--font-body);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 16px 32px;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.hero-btn:hover {
+  background-color: var(--color-gold-accent);
+  color: var(--color-smoked-umber);
+}
+
+.animate-in-1 { animation: fadeUp 0.8s forwards 0.3s; }
+.animate-in-2 { animation: fadeUp 0.8s forwards 0.6s; }
+.animate-in-3 { animation: fadeUp 0.8s forwards 0.9s; }
+.animate-in-4 { animation: fadeUp 0.8s forwards 1.2s; }
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 60px;
+  background-color: rgba(201, 168, 76, 0.3);
+  z-index: 2;
+}
+
+.scroll-dot {
+  width: 3px;
+  height: 3px;
+  background-color: var(--color-gold-accent);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  animation: scrollDown 2s infinite cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@keyframes scrollDown {
+  0% { top: 0; opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+.hero-ticker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 0;
+  background-color: rgba(26, 16, 8, 0.5);
+  border-top: 1px solid rgba(182, 79, 26, 0.2);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.ticker-content {
+  display: flex;
+  width: max-content;
+  animation: ticker 30s linear infinite;
+}
+
+.ticker-content span {
+  font-family: var(--font-body);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-haldi);
+  opacity: 0.6;
+  white-space: nowrap;
+  padding-right: 40px;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); }
+}
+
+.sound-toggle-btn {
+  position: absolute;
+  bottom: 60px; /* Above the ticker */
+  right: 40px;
+  background: rgba(26, 16, 8, 0.6);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  color: var(--color-haldi);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.sound-toggle-btn:hover {
+  background: rgba(26, 16, 8, 0.9);
+  border-color: var(--color-haldi);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .sound-toggle-btn {
+    bottom: 50px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-content, .scroll-dot, .animate-in-1, .animate-in-2, .animate-in-3, .animate-in-4 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
