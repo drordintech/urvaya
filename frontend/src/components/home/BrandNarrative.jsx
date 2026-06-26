@@ -33,7 +33,6 @@ const BrandNarrative = () => {
           <p className="narrative-body">
             Every thread of an Urvaya heirloom tells a story of devotion. Crafted by master artisans whose lineage dates back to the royal courts, our handlooms are living artifacts. From the GI-tagged silks of Banaras to the intricate zaris of Kanchipuram, we preserve the purity of Indian craft.
           </p>
-          <button className="narrative-btn hover-shimmer">Meet Our Weavers &rarr;</button>
         </div>
       </div>
     </section>

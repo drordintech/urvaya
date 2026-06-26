@@ -1,0 +1,124 @@
+/* Collection Detail Page Global Styles */
+
+.collection-detail-page {
+  width: 100%;
+  background-color: var(--color-parchment);
+  min-height: 100vh;
+}
+
+.fade-in {
+  animation: fadeInPage 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Scroll progress bar removed */
+
+.back-nav {
+  position: fixed;
+  top: 100px;
+  left: 40px;
+  z-index: 90;
+}
+
+.back-nav a {
+  font-family: var(--font-body);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  font-weight: 500;
+  background: rgba(250, 246, 236, 0.9);
+  padding: 8px 16px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.back-nav a:hover {
+  transform: translateX(-5px);
+}
+
+.next-collection-strip {
+  width: 100%;
+  background-color: var(--color-smoked-umber);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.next-collection-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.3s ease;
+}
+
+.next-collection-link:hover {
+  transform: translateY(-5px);
+}
+
+.next-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.next-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  color: var(--color-ivory);
+  font-style: italic;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Common Eyebrow */
+.section-eyebrow {
+  font-family: var(--font-body);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 20px;
+}
+
+/* Animations based on Intersection Observer via classes */
+.fade-up-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up-element.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-right-element {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-right-element.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .back-nav {
+    top: 90px;
+    left: 20px;
+  }
+  .next-title {
+    font-size: 36px;
+  }
+}

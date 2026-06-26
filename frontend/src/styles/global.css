@@ -4,22 +4,23 @@
   /* Primary */
   --color-rakt: #402217;
   --color-crimson: #802520;
-  
+
   /* Accent */
   --color-haldi: #B64F1A;
   --color-marigold: #B64F1A;
-  
+
   /* Heritage */
   --color-forest: #6C5610;
-  
+
   /* Neutrals */
   --color-ivory: #E2D3B4;
   --color-petal: #B6907E;
-  
+
   /* Backgrounds */
   --color-smoked-umber: #1A1008;
   --color-aged-parchment: #F0E8D8;
-  
+  --color-parchment: #EBE1CE;
+
   /* Helper variants based on the design */
   --color-gold-accent: #C9A84C;
   --color-text-dim: #C8B89A;
@@ -34,13 +35,16 @@
   --mughal-arch-smooth: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
   background-color: var(--color-smoked-umber);
@@ -53,7 +57,12 @@ html, body {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
   font-weight: normal;
 }
@@ -107,8 +116,13 @@ button {
 
 /* Animations */
 @keyframes shimmerSweep {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .hover-shimmer {

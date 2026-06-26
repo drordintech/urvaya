@@ -164,27 +164,41 @@
 
 .sound-toggle-btn {
   position: absolute;
-  bottom: 60px; /* Above the ticker */
+  bottom: 80px; 
   right: 40px;
-  background: rgba(26, 16, 8, 0.6);
-  border: 1px solid rgba(201, 168, 76, 0.3);
-  color: var(--color-haldi);
-  width: 48px;
+  background: rgba(26, 16, 8, 0.8);
+  border: 1px solid var(--color-gold-accent);
+  color: var(--color-ivory);
   height: 48px;
-  border-radius: 50%;
+  padding: 0 24px;
+  border-radius: 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
   cursor: pointer;
   z-index: 10;
   transition: all 0.3s ease;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  font-family: var(--font-body);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.sound-toggle-btn.is-muted {
+  animation: pulse-gold 2s infinite;
+}
+
+@keyframes pulse-gold {
+  0% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(201, 168, 76, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0); }
 }
 
 .sound-toggle-btn:hover {
-  background: rgba(26, 16, 8, 0.9);
-  border-color: var(--color-haldi);
+  background: var(--color-gold-accent);
+  color: var(--color-smoked-umber);
   transform: scale(1.05);
 }
 

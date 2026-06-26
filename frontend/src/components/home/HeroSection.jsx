@@ -1,7 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
 import './HeroSection.css';
-import heroVideo from '../../assets/hero new video.mp4';
-
 const HeroSection = () => {
   const [loaded, setLoaded] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
@@ -12,6 +10,7 @@ const HeroSection = () => {
     
     // Attempt to play with sound. If blocked by browser policies, fallback to muted.
     if (videoRef.current) {
+      videoRef.current.volume = 0.2; // Set reduced volume
       const playPromise = videoRef.current.play();
       if (playPromise !== undefined) {
         playPromise.catch((error) => {
@@ -37,7 +36,7 @@ const HeroSection = () => {
         <video 
           ref={videoRef}
           className="hero-video" 
-          src={heroVideo} 
+          src="https://ik.imagekit.io/u7wmdv4ao/hero%20new%20video.mp4?updatedAt=1782201383342" 
           autoPlay 
           muted={isMuted}
           loop 
@@ -57,21 +56,35 @@ const HeroSection = () => {
         <p className={`hero-tagline ${loaded ? 'animate-in-3' : ''}`}>
           The Art of Handloom Living
         </p>
-        <button className={`hero-btn hover-shimmer ${loaded ? 'animate-in-4' : ''}`}>
+        <button 
+          className={`hero-btn hover-shimmer ${loaded ? 'animate-in-4' : ''}`}
+          onClick={() => {
+            const element = document.getElementById('collections');
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+        >
           Explore the Collection
         </button>
       </div>
 
       {/* Sound Toggle Button */}
       <button 
-        className="sound-toggle-btn" 
+        className={`sound-toggle-btn ${isMuted ? 'is-muted' : 'is-playing'}`} 
         onClick={toggleMute}
         aria-label={isMuted ? "Unmute video" : "Mute video"}
       >
         {isMuted ? (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+          <>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+            <span className="sound-toggle-text">Tap to Unmute</span>
+          </>
         ) : (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+          <>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <span className="sound-toggle-text">Mute</span>
+          </>
         )}
       </button>
 

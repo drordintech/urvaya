@@ -8,16 +8,19 @@ import tussarImg from '../../assets/collections/tussar.png';
 import jamdaniImg from '../../assets/collections/jamdani.webp';
 
 const collections = [
-  { name: 'Banarasi Silk', image: banarasiImg },
-  { name: 'Kanjeevaram', image: kanjeevaramImg },
-  { name: 'Chanderi', image: chanderiImg },
-  { name: 'Paithani', image: paithaniImg },
-  { name: 'Tussar', image: tussarImg },
-  { name: 'Jamdani', image: jamdaniImg }
+  { name: 'Banarasi Silk', image: banarasiImg, slug: 'banarasi-silk' },
+  { name: 'Kanjeevaram', image: kanjeevaramImg, slug: 'kanjeevaram' },
+  { name: 'Chanderi', image: chanderiImg, slug: 'chanderi' },
+  { name: 'Paithani', image: paithaniImg, slug: 'paithani' },
+  { name: 'Tussar', image: tussarImg, slug: 'tussar' },
+  { name: 'Jamdani', image: jamdaniImg, slug: 'jamdani' }
 ];
+
+import { useNavigate } from 'react-router-dom';
 
 const CollectionsGrid = () => {
   const sectionRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -39,18 +42,23 @@ const CollectionsGrid = () => {
   return (
     <section className="collections-section" id="collections" ref={sectionRef}>
       <div className="collections-header reveal-on-scroll">
-        <h2 className="text-section-title" style={{color: 'var(--color-rakt)'}}>Our Collections</h2>
+        <h2 className="text-section-title" style={{ color: 'var(--color-rakt)' }}>Our Collections</h2>
         <div className="lotus-divider">
-           <svg width="100" height="20" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 2 C40 8, 30 10, 50 18 C70 10, 60 8, 50 2 Z" stroke="#B64F1A" strokeWidth="1"/>
-              <path d="M50 5 C45 10, 40 12, 50 16 C60 12, 55 10, 50 5 Z" stroke="#B64F1A" strokeWidth="1"/>
-           </svg>
+          <svg width="100" height="20" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 2 C40 8, 30 10, 50 18 C70 10, 60 8, 50 2 Z" stroke="#B64F1A" strokeWidth="1" />
+            <path d="M50 5 C45 10, 40 12, 50 16 C60 12, 55 10, 50 5 Z" stroke="#B64F1A" strokeWidth="1" />
+          </svg>
         </div>
       </div>
-      
+
       <div className="collections-grid">
         {collections.map((collection, index) => (
-          <div className="collection-card reveal-on-scroll" style={{ transitionDelay: `${(index % 3) * 0.1}s` }} key={index}>
+          <div
+            className="collection-card reveal-on-scroll"
+            style={{ transitionDelay: `${(index % 3) * 0.1}s`, cursor: 'pointer' }}
+            key={index}
+            onClick={() => navigate(`/collections/${collection.slug}`)}
+          >
             <div className="collection-arch">
               <img src={collection.image} alt={collection.name} />
               <div className="collection-overlay">
