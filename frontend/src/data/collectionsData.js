@@ -34,12 +34,12 @@ import kanjeevaramCraft4 from '../assets/collections/kanjeevaram/craft 4.png';
 import lucknowiTheme from '../assets/collections/lucknowi/theme inspiration.jpg';
 import lucknowiArchBg from '../assets/collections/lucknowi/architecture background.jpg';
 import lucknowiArch1 from '../assets/collections/lucknowi/architecture1.jpg';
-import lucknowiArch2 from '../assets/collections/lucknowi/architecture1.jpg'; // fallback for missing upload
-import lucknowiArch3 from '../assets/collections/lucknowi/architecture1.jpg'; // fallback for missing upload
+import lucknowiArch2 from '../assets/collections/lucknowi/architecture 2.jpg';
+import lucknowiArch3 from '../assets/collections/lucknowi/architecture 3.jpg';
 import lucknowiWeaver1 from '../assets/collections/lucknowi/weaver 1.jpg';
 import lucknowiWeaver2 from '../assets/collections/lucknowi/weaver 2.jpg';
 import lucknowiWeaver3 from '../assets/collections/lucknowi/weaver 3.jpg';
-import lucknowiCraft1 from '../assets/collections/lucknowi/craft 2.jpg'; // fallback for missing upload
+import lucknowiCraft1 from '../assets/collections/lucknowi/craft 1.jpg';
 import lucknowiCraft2 from '../assets/collections/lucknowi/craft 2.jpg';
 import lucknowiCraft3 from '../assets/collections/lucknowi/craft 3.jpg';
 import lucknowiCraft4 from '../assets/collections/lucknowi/craft 4.jpg';
