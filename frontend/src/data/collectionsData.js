@@ -1,6 +1,6 @@
 import heroBanarasi from '../assets/collections/banarasi saree.png';
 import heroKanjeevaram from '../assets/collections/kanjeevaram.jpg';
-import heroLucknowi from '../assets/collections/sarees/WhatsApp Image 2026-06-24 at 11.35.28 AM.jpeg';
+import heroLucknowi from '../assets/collections/lucknowi.webp';
 
 // Banarasi Uploaded Images
 import banarasiTheme from '../assets/collections/banarasi/theme inspiration.png';
@@ -30,19 +30,19 @@ import kanjeevaramCraft2 from '../assets/collections/kanjeevaram/craft 2.png';
 import kanjeevaramCraft3 from '../assets/collections/kanjeevaram/craft 3.png';
 import kanjeevaramCraft4 from '../assets/collections/kanjeevaram/craft 4.png';
 
-// Lucknowi Placeholder Images (Using banarasi assets for now)
-import lucknowiTheme from '../assets/collections/banarasi/theme inspiration.png';
-import lucknowiArchBg from '../assets/collections/banarasi/architecture background.png';
-import lucknowiArch1 from '../assets/collections/banarasi/architecture 1.png';
-import lucknowiArch2 from '../assets/collections/banarasi/architecture 2.png';
-import lucknowiArch3 from '../assets/collections/banarasi/architecture 3.png';
-import lucknowiWeaver1 from '../assets/collections/banarasi/weaver 1.png';
-import lucknowiWeaver2 from '../assets/collections/banarasi/weaver 2.png';
-import lucknowiWeaver3 from '../assets/collections/banarasi/weaver 3.png';
-import lucknowiCraft1 from '../assets/collections/banarasi/craft 1.png';
-import lucknowiCraft2 from '../assets/collections/banarasi/craft 2.png';
-import lucknowiCraft3 from '../assets/collections/banarasi/craft 3.png';
-import lucknowiCraft4 from '../assets/collections/banarasi/craft 4.png';
+// Lucknowi Images (Using former jamdani assets)
+import lucknowiTheme from '../assets/collections/lucknowi/theme inspiration.png';
+import lucknowiArchBg from '../assets/collections/lucknowi/architecture background.jpg';
+import lucknowiArch1 from '../assets/collections/lucknowi/architecture 1.jpg';
+import lucknowiArch2 from '../assets/collections/lucknowi/architecture 2.jpg';
+import lucknowiArch3 from '../assets/collections/lucknowi/architecture 3.jpg';
+import lucknowiWeaver1 from '../assets/collections/lucknowi/weaver 1.jpg';
+import lucknowiWeaver2 from '../assets/collections/lucknowi/weaver 2.jpg';
+import lucknowiWeaver3 from '../assets/collections/lucknowi/weaver 3.jpg';
+import lucknowiCraft1 from '../assets/collections/lucknowi/craft 1.jpg';
+import lucknowiCraft2 from '../assets/collections/lucknowi/craft 2.jpg';
+import lucknowiCraft3 from '../assets/collections/lucknowi/craft 3.jpg';
+import lucknowiCraft4 from '../assets/collections/lucknowi/craft 4.jpg';
 
 export const collectionsData = {
   "banarasi-silk": {

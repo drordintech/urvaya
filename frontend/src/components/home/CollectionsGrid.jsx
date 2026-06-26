@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import './CollectionsGrid.css';
 import banarasiImg from '../../assets/collections/banarasi saree.png';
 import kanjeevaramImg from '../../assets/collections/kanjeevaram.jpg';
-import lucknowiImg from '../../assets/collections/sarees/WhatsApp Image 2026-06-24 at 11.35.28 AM.jpeg';
+import lucknowiImg from '../../assets/collections/lucknowi.webp';
 
 const collections = [
   { name: 'Banarasi Silk', image: banarasiImg, slug: 'banarasi-silk' },
