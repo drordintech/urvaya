@@ -1,6 +1,6 @@
 import heroBanarasi from '../assets/collections/banarasi saree.png';
 import heroKanjeevaram from '../assets/collections/kanjeevaram.jpg';
-import heroLucknavi from '../assets/collections/sarees/WhatsApp Image 2026-06-24 at 11.35.28 AM.jpeg';
+import heroLucknowi from '../assets/collections/sarees/WhatsApp Image 2026-06-24 at 11.35.28 AM.jpeg';
 
 // Banarasi Uploaded Images
 import banarasiTheme from '../assets/collections/banarasi/theme inspiration.png';
@@ -30,19 +30,19 @@ import kanjeevaramCraft2 from '../assets/collections/kanjeevaram/craft 2.png';
 import kanjeevaramCraft3 from '../assets/collections/kanjeevaram/craft 3.png';
 import kanjeevaramCraft4 from '../assets/collections/kanjeevaram/craft 4.png';
 
-// Lucknavi Placeholder Images (Using banarasi assets for now)
-import lucknaviTheme from '../assets/collections/banarasi/theme inspiration.png';
-import lucknaviArchBg from '../assets/collections/banarasi/architecture background.png';
-import lucknaviArch1 from '../assets/collections/banarasi/architecture 1.png';
-import lucknaviArch2 from '../assets/collections/banarasi/architecture 2.png';
-import lucknaviArch3 from '../assets/collections/banarasi/architecture 3.png';
-import lucknaviWeaver1 from '../assets/collections/banarasi/weaver 1.png';
-import lucknaviWeaver2 from '../assets/collections/banarasi/weaver 2.png';
-import lucknaviWeaver3 from '../assets/collections/banarasi/weaver 3.png';
-import lucknaviCraft1 from '../assets/collections/banarasi/craft 1.png';
-import lucknaviCraft2 from '../assets/collections/banarasi/craft 2.png';
-import lucknaviCraft3 from '../assets/collections/banarasi/craft 3.png';
-import lucknaviCraft4 from '../assets/collections/banarasi/craft 4.png';
+// Lucknowi Placeholder Images (Using banarasi assets for now)
+import lucknowiTheme from '../assets/collections/banarasi/theme inspiration.png';
+import lucknowiArchBg from '../assets/collections/banarasi/architecture background.png';
+import lucknowiArch1 from '../assets/collections/banarasi/architecture 1.png';
+import lucknowiArch2 from '../assets/collections/banarasi/architecture 2.png';
+import lucknowiArch3 from '../assets/collections/banarasi/architecture 3.png';
+import lucknowiWeaver1 from '../assets/collections/banarasi/weaver 1.png';
+import lucknowiWeaver2 from '../assets/collections/banarasi/weaver 2.png';
+import lucknowiWeaver3 from '../assets/collections/banarasi/weaver 3.png';
+import lucknowiCraft1 from '../assets/collections/banarasi/craft 1.png';
+import lucknowiCraft2 from '../assets/collections/banarasi/craft 2.png';
+import lucknowiCraft3 from '../assets/collections/banarasi/craft 3.png';
+import lucknowiCraft4 from '../assets/collections/banarasi/craft 4.png';
 
 export const collectionsData = {
   "banarasi-silk": {
@@ -93,28 +93,28 @@ export const collectionsData = {
       { name: "Velu P.", location: "Kanchipuram", quote: "Our silk carries the weight of history.", image: kanjeevaramWeaver3 }
     ]
   },
-  "lucknavi": {
-    name: "Lucknavi",
-    slug: "lucknavi",
+  "lucknowi": {
+    name: "Lucknowi",
+    slug: "lucknowi",
     region: "Lucknow, Uttar Pradesh",
     tagline: "The Grace of Chikankari",
-    heroImage: heroLucknavi,
+    heroImage: heroLucknowi,
     accentColor: "#D8C3A5",
     themeHeading: "The Nawabi Elegance",
-    themeBody: "Lucknavi chikankari is a delicate and artfully done hand embroidery that brings a touch of royalty. Celebrated for its ethereal grace, this collection brings the historic charm of Awadh to your wardrobe.",
+    themeBody: "Lucknowi chikankari is a delicate and artfully done hand embroidery that brings a touch of royalty. Celebrated for its ethereal grace, this collection brings the historic charm of Awadh to your wardrobe.",
     themePullQuote: "Woven with the breath of the nawabs.",
-    themeImage: lucknaviTheme,
+    themeImage: lucknowiTheme,
     weaverHeading: "The Artisans of Awadh",
     weaverBody: "The karigars of Lucknow have preserved the art of Chikankari for centuries. Using fine needles on sheer fabrics, they create intricate patterns that look like poetry woven into cloth.",
-    craftImages: [lucknaviCraft1, lucknaviCraft2, lucknaviCraft3, lucknaviCraft4],
+    craftImages: [lucknowiCraft1, lucknowiCraft2, lucknowiCraft3, lucknowiCraft4],
     architectureHeading: "The Palaces of Lucknow",
     architectureBody: "The motifs of Chikankari are heavily inspired by the Mughal architecture of Lucknow. The intricate floral patterns and paisley designs mirror the majestic arches and domes of the city's historic monuments.",
-    architectureBgImage: lucknaviArchBg,
-    architectureImages: [lucknaviArch1, lucknaviArch2, lucknaviArch3],
+    architectureBgImage: lucknowiArchBg,
+    architectureImages: [lucknowiArch1, lucknowiArch2, lucknowiArch3],
     weavers: [
-      { name: "Rafiq Ahmad", location: "Lucknow", quote: "My needle paints the flowers.", image: lucknaviWeaver1 },
-      { name: "Fatima Bi", location: "Aminabad", quote: "Each stitch is a whisper of history.", image: lucknaviWeaver2 },
-      { name: "Zainab", location: "Chowk", quote: "Patience woven into muslin.", image: lucknaviWeaver3 }
+      { name: "Rafiq Ahmad", location: "Lucknow", quote: "My needle paints the flowers.", image: lucknowiWeaver1 },
+      { name: "Fatima Bi", location: "Aminabad", quote: "Each stitch is a whisper of history.", image: lucknowiWeaver2 },
+      { name: "Zainab", location: "Chowk", quote: "Patience woven into muslin.", image: lucknowiWeaver3 }
     ]
   }
 };
