@@ -76,7 +76,7 @@
   width: 100%;
   aspect-ratio: 3/4;
   overflow: hidden;
-  clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
+  border-radius: 4px;
 }
 
 .wishlist-image {
@@ -92,8 +92,8 @@
 
 .wishlist-remove-btn {
   position: absolute;
-  top: 30px;
-  right: 16px;
+  top: 12px;
+  right: 12px;
   background: rgba(240, 232, 216, 0.8);
   border: none;
   border-radius: 50%;
