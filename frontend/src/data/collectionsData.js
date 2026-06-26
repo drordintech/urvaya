@@ -1,9 +1,6 @@
 import heroBanarasi from '../assets/collections/banarasi saree.png';
 import heroKanjeevaram from '../assets/collections/kanjeevaram.jpg';
-import heroChanderi from '../assets/collections/chanderi saree.png';
-import heroPaithani from '../assets/collections/paithani.png';
-import heroTussar from '../assets/collections/tussar.png';
-import heroJamdani from '../assets/collections/jamdani.webp';
+import heroLucknavi from '../assets/collections/sarees/WhatsApp Image 2026-06-24 at 11.35.28 AM.jpeg';
 
 // Banarasi Uploaded Images
 import banarasiTheme from '../assets/collections/banarasi/theme inspiration.png';
@@ -33,61 +30,19 @@ import kanjeevaramCraft2 from '../assets/collections/kanjeevaram/craft 2.png';
 import kanjeevaramCraft3 from '../assets/collections/kanjeevaram/craft 3.png';
 import kanjeevaramCraft4 from '../assets/collections/kanjeevaram/craft 4.png';
 
-// Chanderi Uploaded Images
-import chanderiTheme from '../assets/collections/chanderi/theme inspiration.png';
-import chanderiArchBg from '../assets/collections/chanderi/architecture background.png';
-import chanderiArch1 from '../assets/collections/chanderi/architecture 1.jpg';
-import chanderiArch2 from '../assets/collections/chanderi/architecture 2.jpg';
-import chanderiArch3 from '../assets/collections/chanderi/architecture 3.jpg';
-import chanderiWeaver1 from '../assets/collections/chanderi/weaver 1.png';
-import chanderiWeaver2 from '../assets/collections/chanderi/weaver 2.png';
-import chanderiWeaver3 from '../assets/collections/chanderi/weaver 3.png';
-import chanderiCraft1 from '../assets/collections/chanderi/craft 1.jpg';
-import chanderiCraft2 from '../assets/collections/chanderi/craft 2.jpg';
-import chanderiCraft3 from '../assets/collections/chanderi/craft 3.jpg';
-import chanderiCraft4 from '../assets/collections/chanderi/craft 4.jpg';
-
-// Paithani Uploaded Images
-import paithaniTheme from '../assets/collections/paithani/theme inspiration.png';
-import paithaniArchBg from '../assets/collections/paithani/architecture background.jpg';
-import paithaniArch1 from '../assets/collections/paithani/architecture 1.jpg';
-import paithaniArch2 from '../assets/collections/paithani/architecture 2.jpg';
-import paithaniArch3 from '../assets/collections/paithani/architecture 3.jpg';
-import paithaniWeaver1 from '../assets/collections/paithani/weaver 1.jpg';
-import paithaniWeaver2 from '../assets/collections/paithani/weaver 2.jpg';
-import paithaniWeaver3 from '../assets/collections/paithani/weaver 3.jpg';
-import paithaniCraft1 from '../assets/collections/paithani/craft 1.jpg';
-import paithaniCraft2 from '../assets/collections/paithani/craft 2.jpg';
-import paithaniCraft3 from '../assets/collections/paithani/craft 3.jpg';
-import paithaniCraft4 from '../assets/collections/paithani/craft 4.jpg';
-
-// Tussar Uploaded Images
-import tussarTheme from '../assets/collections/tussar/theme inspiration.png';
-import tussarArchBg from '../assets/collections/tussar/architecture background.jpg';
-import tussarArch1 from '../assets/collections/tussar/architecture 1.jpg';
-import tussarArch2 from '../assets/collections/tussar/architecture 2.jpg';
-import tussarArch3 from '../assets/collections/tussar/architecture 3.jpg';
-import tussarWeaver1 from '../assets/collections/tussar/weaver 1.jpg';
-import tussarWeaver2 from '../assets/collections/tussar/weaver 2.jpg';
-import tussarWeaver3 from '../assets/collections/tussar/weaver 3.jpg';
-import tussarCraft1 from '../assets/collections/tussar/craft 1.jpg';
-import tussarCraft2 from '../assets/collections/tussar/craft 2.jpg';
-import tussarCraft3 from '../assets/collections/tussar/craft 3.jpg';
-import tussarCraft4 from '../assets/collections/tussar/craft 4.jpg';
-
-// Jamdani Uploaded Images
-import jamdaniTheme from '../assets/collections/jamdani/theme inspiration.png';
-import jamdaniArchBg from '../assets/collections/jamdani/architecture background.jpg';
-import jamdaniArch1 from '../assets/collections/jamdani/architecture 1.jpg';
-import jamdaniArch2 from '../assets/collections/jamdani/architecture 2.jpg';
-import jamdaniArch3 from '../assets/collections/jamdani/architecture 3.jpg';
-import jamdaniWeaver1 from '../assets/collections/jamdani/weaver 1.jpg';
-import jamdaniWeaver2 from '../assets/collections/jamdani/weaver 2.jpg';
-import jamdaniWeaver3 from '../assets/collections/jamdani/weaver 3.jpg';
-import jamdaniCraft1 from '../assets/collections/jamdani/craft 1.jpg';
-import jamdaniCraft2 from '../assets/collections/jamdani/craft 2.jpg';
-import jamdaniCraft3 from '../assets/collections/jamdani/craft 3.jpg';
-import jamdaniCraft4 from '../assets/collections/jamdani/craft 4.jpg';
+// Lucknavi Placeholder Images (Using banarasi assets for now)
+import lucknaviTheme from '../assets/collections/banarasi/theme inspiration.png';
+import lucknaviArchBg from '../assets/collections/banarasi/architecture background.png';
+import lucknaviArch1 from '../assets/collections/banarasi/architecture 1.png';
+import lucknaviArch2 from '../assets/collections/banarasi/architecture 2.png';
+import lucknaviArch3 from '../assets/collections/banarasi/architecture 3.png';
+import lucknaviWeaver1 from '../assets/collections/banarasi/weaver 1.png';
+import lucknaviWeaver2 from '../assets/collections/banarasi/weaver 2.png';
+import lucknaviWeaver3 from '../assets/collections/banarasi/weaver 3.png';
+import lucknaviCraft1 from '../assets/collections/banarasi/craft 1.png';
+import lucknaviCraft2 from '../assets/collections/banarasi/craft 2.png';
+import lucknaviCraft3 from '../assets/collections/banarasi/craft 3.png';
+import lucknaviCraft4 from '../assets/collections/banarasi/craft 4.png';
 
 export const collectionsData = {
   "banarasi-silk": {
@@ -138,100 +93,28 @@ export const collectionsData = {
       { name: "Velu P.", location: "Kanchipuram", quote: "Our silk carries the weight of history.", image: kanjeevaramWeaver3 }
     ]
   },
-  "chanderi": {
-    name: "Chanderi",
-    slug: "chanderi",
-    region: "Chanderi, Madhya Pradesh",
-    tagline: "Woven Poetry in Silk and Cotton",
-    heroImage: heroChanderi,
-    accentColor: "#8C7B5E",
-    themeHeading: "Light as Morning Mist",
-    themeBody: "Known as 'woven air', Chanderi fabrics are characterized by their sheer texture, lightweight feel, and luxurious drape. Our collection celebrates the delicate interplay of silk warp and cotton weft, adorned with subtle zari buttas. It is a fabric that captures the gentle, diffused light of a central Indian morning.",
-    themePullQuote: "Fabric that captures the gentle, diffused light of morning.",
-    themeImage: chanderiTheme,
-    weaverHeading: "The Weavers of Madhya Pradesh",
-    weaverBody: "The artisans of Chanderi town practice a craft patronized by royalty since the 11th century. They specialize in the 'Khat' technique, creating intricate motifs without cutting the threads. The sheer transparency of the fabric demands absolute precision, making every weaver a master of tension and delicacy.",
-    craftImages: [chanderiCraft1, chanderiCraft2, chanderiCraft3, chanderiCraft4],
-    architectureHeading: "The Step-wells of Central India",
-    architectureBody: "The sheer, lightweight quality of Chanderi mirrors the dappled light filtering through the intricate Jali (lattice) screens of Rajput and Mughal architecture. The geometric buttas often reflect the symmetrical layouts of ancient Baolis (step-wells) found across Madhya Pradesh, blending shadow and light seamlessly.",
-    architectureBgImage: chanderiArchBg,
-    architectureImages: [chanderiArch1, chanderiArch2, chanderiArch3],
+  "lucknavi": {
+    name: "Lucknavi",
+    slug: "lucknavi",
+    region: "Lucknow, Uttar Pradesh",
+    tagline: "The Grace of Chikankari",
+    heroImage: heroLucknavi,
+    accentColor: "#D8C3A5",
+    themeHeading: "The Nawabi Elegance",
+    themeBody: "Lucknavi chikankari is a delicate and artfully done hand embroidery that brings a touch of royalty. Celebrated for its ethereal grace, this collection brings the historic charm of Awadh to your wardrobe.",
+    themePullQuote: "Woven with the breath of the nawabs.",
+    themeImage: lucknaviTheme,
+    weaverHeading: "The Artisans of Awadh",
+    weaverBody: "The karigars of Lucknow have preserved the art of Chikankari for centuries. Using fine needles on sheer fabrics, they create intricate patterns that look like poetry woven into cloth.",
+    craftImages: [lucknaviCraft1, lucknaviCraft2, lucknaviCraft3, lucknaviCraft4],
+    architectureHeading: "The Palaces of Lucknow",
+    architectureBody: "The motifs of Chikankari are heavily inspired by the Mughal architecture of Lucknow. The intricate floral patterns and paisley designs mirror the majestic arches and domes of the city's historic monuments.",
+    architectureBgImage: lucknaviArchBg,
+    architectureImages: [lucknaviArch1, lucknaviArch2, lucknaviArch3],
     weavers: [
-      { name: "Irfan Ansari", location: "Chanderi", quote: "We weave the wind itself.", image: chanderiWeaver1 },
-      { name: "Meera Bai", location: "Ashok Nagar", quote: "The sheer fabric hides no mistakes.", image: chanderiWeaver2 },
-      { name: "Salim M.", location: "Chanderi", quote: "Gold thread floating on a cloud.", image: chanderiWeaver3 }
-    ]
-  },
-  "paithani": {
-    name: "Paithani",
-    slug: "paithani",
-    region: "Yeola, Maharashtra",
-    tagline: "The Queen of Silks",
-    heroImage: heroPaithani,
-    accentColor: "#4A1A6B",
-    themeHeading: "The Peacock Courts of the Deccan",
-    themeBody: "Paithani is synonymous with the vibrant, royal courts of the Peshwas. Our collection showcases the signature kaleidoscopic colors, created by weaving one color lengthwise and another widthwise. The luxurious borders and the grand pallus, heavy with intricate peacock and lotus motifs, speak of unapologetic opulence.",
-    themePullQuote: "A kaleidoscope of silk, fit for royalty.",
-    themeImage: paithaniTheme,
-    weaverHeading: "The Artisans of Yeola",
-    weaverBody: "The weavers of Yeola and Paithan use a tapestry-weaving technique, where multiple shuttles are used to create the solid, enamel-like motifs on the pallu. This painstakingly slow process means a genuine Paithani pallu can take months to complete. It is a true heirloom craft, passed from master to apprentice.",
-    craftImages: [paithaniCraft1, paithaniCraft2, paithaniCraft3, paithaniCraft4],
-    architectureHeading: "Peshwa-era Maratha Forts & Palaces",
-    architectureBody: "The grand, vibrant aesthetics of Paithani are echoed in the ornate woodwork and vibrant frescoes of Maratha palaces like Shaniwar Wada. The iconic 'Muniya' (parrot) and 'Mor' (peacock) motifs woven into the fabric are reflections of the royal courtyards and the opulent lifestyle of the Deccan royalty.",
-    architectureBgImage: paithaniArchBg,
-    architectureImages: [paithaniArch1, paithaniArch2, paithaniArch3],
-    weavers: [
-      { name: "Shankar R.", location: "Yeola", quote: "The peacock must look alive in the silk.", image: paithaniWeaver1 },
-      { name: "Priya T.", location: "Paithan", quote: "We weave paintings, not just cloth.", image: paithaniWeaver2 },
-      { name: "Anand K.", location: "Yeola", quote: "Colors that change with every step.", image: paithaniWeaver3 }
-    ]
-  },
-  "tussar": {
-    name: "Tussar",
-    slug: "tussar",
-    region: "Bhagalpur, Bihar & Jharkhand",
-    tagline: "Wild Silk of the Forests",
-    heroImage: heroTussar,
-    accentColor: "#8B6914",
-    themeHeading: "Raw Earth, Wild Silk",
-    themeBody: "Tussar silk embodies the raw, untamed beauty of nature. Sourced from wild silk moths in the forests of central and eastern India, its rich golden hue and textured finish are completely unique. Our collection honors this earthy origin, focusing on organic tones and tribal-inspired motifs that ground the wearer.",
-    themePullQuote: "The textured touch of the untamed forest.",
-    themeImage: tussarTheme,
-    weaverHeading: "The Tribal Weavers of Jharkhand",
-    weaverBody: "Tussar weaving is deeply intertwined with the tribal communities of Jharkhand and Bihar. The entire process, from rearing the wild silkworms on Arjun and Asan trees to spinning the coarse yarn and weaving it on pit looms, is a sustainable, forest-based livelihood that honors the rhythm of the earth.",
-    craftImages: [tussarCraft1, tussarCraft2, tussarCraft3, tussarCraft4],
-    architectureHeading: "Tribal Architecture of the Jharkhand Forests",
-    architectureBody: "The raw, unpolished texture of Tussar silk reflects the indigenous mud and thatch architecture of the tribal heartlands. The geometric, elemental motifs often woven into the fabric or hand-painted as Madhubani or Warli art draw directly from the protective symbols painted on the walls of these forest dwellings.",
-    architectureBgImage: tussarArchBg,
-    architectureImages: [tussarArch1, tussarArch2, tussarArch3],
-    weavers: [
-      { name: "Suresh Munda", location: "Jharkhand", quote: "The forest gives us the thread.", image: tussarWeaver1 },
-      { name: "Kiran Devi", location: "Bhagalpur", quote: "Spinning wild silk takes strong hands.", image: tussarWeaver2 },
-      { name: "Mangal T.", location: "Dumka", quote: "Every uneven thread tells a story.", image: tussarWeaver3 }
-    ]
-  },
-  "jamdani": {
-    name: "Jamdani",
-    slug: "jamdani",
-    region: "Nadia, West Bengal",
-    tagline: "Woven Tapestry of Bengal",
-    heroImage: heroJamdani,
-    accentColor: "#1A4A5E",
-    themeHeading: "Flowers Woven from Air",
-    themeBody: "Jamdani is a superlative expression of the weaver's art, where discontinuous supplementary weft motifs are added by hand to create floating patterns on a sheer muslin base. Our collection features ethereal floral and geometric designs that appear to hover on the fabric, creating a look of quiet, refined elegance.",
-    themePullQuote: "Motifs that float like shadows on sheer mist.",
-    themeImage: jamdaniTheme,
-    weaverHeading: "The Nakshi Masters of Bengal",
-    weaverBody: "The intricate 'Nakshi' (design) is traditionally woven without a jacquard mechanism; instead, the weaver reads the pattern from a paper graphic (Bula) and inserts the extra weft thread by hand using a bamboo needle. This intensely manual process means true Jamdani is as much embroidery as it is weaving.",
-    craftImages: [jamdaniCraft1, jamdaniCraft2, jamdaniCraft3, jamdaniCraft4],
-    architectureHeading: "The Terracotta Temples of Bengal",
-    architectureBody: "The intricate, repetitive floral vines and geometric shapes of Jamdani closely resemble the exquisite terracotta plaques found on the temples of Bishnupur. The quiet, understated elegance of the weave mirrors the poetic, earthy architecture of the Bengal countryside, where art is detailed but never loud.",
-    architectureBgImage: jamdaniArchBg,
-    architectureImages: [jamdaniArch1, jamdaniArch2, jamdaniArch3],
-    weavers: [
-      { name: "Bikash Pal", location: "Nadia", quote: "My needle paints the flowers.", image: jamdaniWeaver1 },
-      { name: "Anil Das", location: "Fulia", quote: "Jamdani is meditation at the loom.", image: jamdaniWeaver2 },
-      { name: "Sumita S.", location: "Santipur", quote: "Patience woven into muslin.", image: jamdaniWeaver3 }
+      { name: "Rafiq Ahmad", location: "Lucknow", quote: "My needle paints the flowers.", image: lucknaviWeaver1 },
+      { name: "Fatima Bi", location: "Aminabad", quote: "Each stitch is a whisper of history.", image: lucknaviWeaver2 },
+      { name: "Zainab", location: "Chowk", quote: "Patience woven into muslin.", image: lucknaviWeaver3 }
     ]
   }
 };

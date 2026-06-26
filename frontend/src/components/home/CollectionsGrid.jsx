@@ -2,18 +2,12 @@ import { useEffect, useRef } from 'react';
 import './CollectionsGrid.css';
 import banarasiImg from '../../assets/collections/banarasi saree.png';
 import kanjeevaramImg from '../../assets/collections/kanjeevaram.jpg';
-import chanderiImg from '../../assets/collections/chanderi saree.png';
-import paithaniImg from '../../assets/collections/paithani.png';
-import tussarImg from '../../assets/collections/tussar.png';
-import jamdaniImg from '../../assets/collections/jamdani.webp';
+import lucknaviImg from '../../assets/collections/sarees/WhatsApp Image 2026-06-24 at 11.35.28 AM.jpeg';
 
 const collections = [
   { name: 'Banarasi Silk', image: banarasiImg, slug: 'banarasi-silk' },
   { name: 'Kanjeevaram', image: kanjeevaramImg, slug: 'kanjeevaram' },
-  { name: 'Chanderi', image: chanderiImg, slug: 'chanderi' },
-  { name: 'Paithani', image: paithaniImg, slug: 'paithani' },
-  { name: 'Tussar', image: tussarImg, slug: 'tussar' },
-  { name: 'Jamdani', image: jamdaniImg, slug: 'jamdani' }
+  { name: 'Lucknavi', image: lucknaviImg, slug: 'lucknavi' }
 ];
 
 import { useNavigate } from 'react-router-dom';

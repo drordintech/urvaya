@@ -20,7 +20,7 @@ const CollectionDetail = () => {
   const [data, setData] = useState(null);
 
   // Define the ordered array of slugs for "Next Collection" navigation
-  const collectionSlugs = ['banarasi-silk', 'kanjeevaram', 'chanderi', 'paithani', 'tussar', 'jamdani'];
+  const collectionSlugs = ['banarasi-silk', 'kanjeevaram', 'lucknavi'];
 
   useEffect(() => {
     // Reset scroll on navigation
