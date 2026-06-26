@@ -27,7 +27,7 @@ const ProductCard = ({ product, accentColor }) => {
         </div>
         <h3 className="product-name">{product.name}</h3>
         <p className="product-price">{product.price}</p>
-        <p className="time-to-weave">{product.timeToWeave}</p>
+        <p className="sales-metric">{product.salesMetric}</p>
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ export const fetchProducts = async (collectionSlug, page = 1) => {
       collection: collectionSlug,
       isGICertified,
       weaveType: isGICertified ? "Kadwa Weave" : "Handloom",
-      timeToWeave: `${Math.floor(Math.random() * 10) + 10} days to weave` // 10-20 days
+      salesMetric: Math.random() > 0.5 ? "1000+ units sold" : "Best Seller"
     });
   }
 
