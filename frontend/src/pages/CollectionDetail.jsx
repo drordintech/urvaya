@@ -51,9 +51,9 @@ const CollectionDetail = () => {
 
       <CollectionHero data={data} />
       <ThemeInspiration data={data} />
+      <ProductGrid collectionSlug={slug} data={data} />
       <WeaverStory data={data} />
       <ArchitectureReference data={data} />
-      <ProductGrid collectionSlug={slug} data={data} />
       <StylingCare data={data} />
 
       {/* Next Collection Strip */}
