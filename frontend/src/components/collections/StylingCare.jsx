@@ -20,13 +20,7 @@ const StylingCare = ({ data }) => {
           <h2 className="styling-heading">Complete the look</h2>
           
           <div className="suggestion-cards">
-            <div className="suggestion-card" style={{ borderLeftColor: data.accentColor }}>
-              <div className="suggestion-icon">✧</div>
-              <div className="suggestion-text">
-                <h4>Blouse Pairing</h4>
-                <p>Contrast raw silk in deep jewel tones</p>
-              </div>
-            </div>
+
             <div className="suggestion-card" style={{ borderLeftColor: data.accentColor }}>
               <div className="suggestion-icon">✧</div>
               <div className="suggestion-text">
